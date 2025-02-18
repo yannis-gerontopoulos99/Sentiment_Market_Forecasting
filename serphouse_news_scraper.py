@@ -91,7 +91,7 @@ def main():
     headers = {
         'accept': "application/json",
         'content-type': "application/json",
-        'authorization': "Bearer DOSds0BrFuMJkb5d7IayySWEWrau09Xqd2kfryDzcT0jFzuNqWE3XVsXMnjK"  # Add your bearer token here
+        'authorization': "Bearer API_KEY"  # Add your bearer token here
     }
     
     query = "AAPL"  # Change this variable to any stock ticker or keyword you want
