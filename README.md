@@ -35,6 +35,7 @@ Second model that uses only closing prices.
 Clone the repository:
 
 git clone https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting.git
+
 cd sentiment-market-forecasting
 
 Install dependencies:
