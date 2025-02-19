@@ -5,7 +5,7 @@
 
 Sentiment Market Forecasting is a Python-based project that aims to predict market trends using sentiment analysis and deep learning. The project scrapes news
 titles from the GuruFocus website, analyzes their sentiment using a Hugging Face transformer model, and trains LSTM models to forecast market movements based on 
-sentiment scores and closing prices. Both models have significant results.
+sentiment scores and closing prices. The models have significant results.
 
 
 ## Features ##
