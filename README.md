@@ -50,21 +50,21 @@ pip install -r requirements.txt
 
 <ins>Scrape News Titles</ins>:
 
-python [gurufocus_news_scraper.py](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/gurufocus_news_scraper.py)
+python gurufocus_news_scraper.py
 
 <ins>Scrape Market Prices</ins>:
 
-python [market_scrape.py](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/market_scrape.py)
+python[market_scrape.p
 
 <ins>Run Sentiment Analysis</ins>:
 
-[sentiment_analysis.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/sentiment_analysis.ipynb)
+sentiment_analysis.ipynb
 
 <ins>Train LSTM Models</ins>:
 
-[LSTM_Forecast.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/LSTM_Forecast.ipynb)
+LSTM_Forecast.ipynb
 
-[LSTM_Sentiment_Forecast.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/LSTM_Sentiment_Forecast.ipynb)
+LSTM_Sentiment_Forecast.ipynb
 
 
 ## Dependencies ##
