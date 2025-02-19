@@ -10,25 +10,27 @@ sentiment scores and closing prices. Both models have significant results.
 
 ## Features ##
 
-Web Scraping: Extracts news titles from GuruFocus.
+<ins>Web Scraping</ins>: Extracts news titles from GuruFocus.
 
 GuruFocus is a comprehensive value investing website.
+
 SERPHouse is an API that retrieves data from search engines, particularly Google Search.
 
-AAPL_articles.csv: A merged dataset comprising dates and titles of Apple-related news. The dataset was created using a scraping method on the GuruFocus website 
+<ins>AAPL_articles.csv</ins>: A merged dataset comprising dates and titles of Apple-related news. The dataset was created using a scraping method on the GuruFocus website 
 and the SERPHouse API. Since historical news titles were not easily available on investing sites, this dataset covers dates from 01-01-2023 to 14-02-2025. The 
 data from SERPHouse spans 01-01-2023 to 05-11-2025, and after that, data is sourced from GuruFocus.
 
-AAPL_historic_prices.csv: A dataset containing market information, including Date, Open, Low, High, Close, and Volume.
+<ins>AAPL_historic_prices.csv</ins>: A dataset containing market information, including Date, Open, Low, High, Close, and Volume.
 
-Sentiment Analysis: Utilizes a Hugging Face transformer model to analyze sentiment scores of news headlines.
-https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
+<ins>Sentiment Analysis</ins>: Utilizes a Hugging Face transformer model to analyze sentiment scores of news headlines.
 
-LSTM Models:
+Model: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
 
-One model that combines sentiment scores with closing prices.
+<ins>LSTM Models</ins>:
 
-Second model that uses only closing prices.
+One model that combines sentiment scores with closing prices. LSTM_Sentiment_Forecast
+
+Second model that uses only closing prices. LSTM_Forecast
 
 
 ## Installation ##
@@ -46,22 +48,23 @@ pip install -r requirements.txt
 
 ## Usage ##
 
-Scrape News Titles:
+<ins>Scrape News Titles</ins>:
 
-python gurufocus_news_scraper.py
+python [gurufocus_news_scraper.py](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/gurufocus_news_scraper.py)
 
-Scrape Market Prices:
+<ins>Scrape Market Prices</ins>:
 
-python market_scrape.py
+python [market_scrape.py](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/market_scrape.py)
 
-Run Sentiment Analysis:
+<ins>Run Sentiment Analysis</ins>:
 
-sentiment_analysis.ipynb
+[sentiment_analysis.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/sentiment_analysis.ipynb)
 
-Train LSTM Models:
+<ins>Train LSTM Models</ins>:
 
-LSTM_Forecast.ipynb
-LSTM_Sentiment_Forecast.ipynb
+[LSTM_Forecast.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/LSTM_Forecast.ipynb)
+
+[LSTM_Sentiment_Forecast.ipynb](https://github.com/yannis-gerontopoulos99/sentiment-market-forecasting/blob/main/LSTM_Sentiment_Forecast.ipynb)
 
 
 ## Dependencies ##
@@ -74,7 +77,7 @@ Torch
 
 Hugging Face Transformers
 
-Selenium (for web scraping)
+Selenium
 
 Pandas, NumPy, Matplotlib
 
@@ -95,6 +98,8 @@ Experimenting with different deep learning architectures.
 Experimetning with more hypermater tuning.
 
 Enhancing sentiment analysis with financial-specific NLP models.
+
+Finetune models for sentiment analysis.
 
 Expanding headlines from a broader date range and sources.
 
