@@ -22,6 +22,7 @@ data from SERPHouse spans 01-01-2023 to 05-11-2025, and after that, data is sour
 AAPL_historic_prices.csv: A dataset containing market information, including Date, Open, Low, High, Close, and Volume.
 
 Sentiment Analysis: Utilizes a Hugging Face transformer model to analyze sentiment scores of news headlines.
+https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
 
 LSTM Models:
 
