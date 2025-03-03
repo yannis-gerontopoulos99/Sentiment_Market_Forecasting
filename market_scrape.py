@@ -9,9 +9,15 @@ today = int(datetime.now().timestamp())
 query_url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?symbol={ticker}&period1=0&period2={today}&interval=1d&includePrePost=true&events=div%2Csplit"
 
 def get_historic_price(query_url):
+    # Define headers to mimic a real browser request
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+
     # Fetch data from the URL
     try:
-        with urllib.request.urlopen(query_url) as url:
+        req = urllib.request.Request(query_url, headers=headers)  # Add headers to request
+        with urllib.request.urlopen(req) as url:
             parsed = json.loads(url.read().decode())
     except Exception as e:
         print(f"Error fetching data: {e}")
@@ -48,8 +54,7 @@ def get_historic_price(query_url):
 AAPL = get_historic_price(query_url)
 print(AAPL)
 
-#Save the data to a csv file
-
+# Save the data to a CSV file
 if AAPL is not None:
     file_name = f"{ticker}_historic_prices.csv"
     AAPL.to_csv(file_name, index=False)
