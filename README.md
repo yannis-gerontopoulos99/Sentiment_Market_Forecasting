@@ -54,7 +54,7 @@ python gurufocus_news_scraper.py
 
 <ins>Scrape Market Prices</ins>:
 
-python[market_scrape.p
+python market_scrape.py
 
 <ins>Run Sentiment Analysis</ins>:
 
@@ -117,3 +117,4 @@ This project is licensed under the MIT License.
 ## Contact ##
 
 For any inquiries, reach out at https://github.com/yannis-gerontopoulos99
+
