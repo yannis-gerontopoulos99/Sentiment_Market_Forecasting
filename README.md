@@ -32,6 +32,7 @@ One model that combines sentiment scores with closing prices. LSTM_Sentiment_For
 
 Second model that uses only closing prices. LSTM_Forecast
 
+![App Screenshot](images/prediction.png)
 
 ## Installation ##
 
